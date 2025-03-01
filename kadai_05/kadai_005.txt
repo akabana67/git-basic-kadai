@@ -1,0 +1,39 @@
+zakky@DESKTOP-V2GHMA2 MINGW64 ~
+$ mkdir git_challenge
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~
+$ cd git_challenge
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/zakky/git_challenge/.git/
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ echo "Hello, world!" > hello_world.txt
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 445d93e] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ echo "こんにちわ、世界" >> hello_world.txt
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 7756f2b] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+zakky@DESKTOP-V2GHMA2 MINGW64 ~/git_challenge (main)
+$ git log --oneline
+7756f2b (HEAD -> main) 日本語訳を追記
+445d93e hello_world.txtを追加
